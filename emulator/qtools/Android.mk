@@ -7,7 +7,7 @@
 LOCAL_PATH:= $(call my-dir)
 
 common_includes := external/qemu
-common_cflags := -O0 -g
+common_cflags := -O0 -g -fpermissive
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := post_trace.cpp trace_reader.cpp decoder.cpp
